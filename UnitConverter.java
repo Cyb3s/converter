@@ -3,12 +3,13 @@ import java.util.Scanner;
 public class UnitConverter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-     
-        // TODO: Uno studente implementa la logica di interazione con l'utente
-     
+          
         int scelta = 2;
         int valore = 0;
         double risultato = 0;
+
+        System.out.println("Inserisci il valore da convertire: ");
+        valore = scanner.nextInt();
 
          System.out.println("Inserisci la funzione desiderata: \n" +
                 "1. Converti Km in Migliaia\n" +
@@ -50,23 +51,33 @@ public class UnitConverter {
     }
 
     // TODO: Ogni studente implementa una di queste funzioni nei propri branch
+    // TODO: Ogni studente implementa una di queste funzioni nei propri branch
     public static double convertiKmInMiglia(double km) {
-        return 0; // Da implementare
+        if (km < 0)
+            throw new IllegalArgumentException("I kilometri non possono essere negativi");
+
+        return km * 0.62137119;
     }
 
     public static double convertiCelsiusInFahrenheit(double celsius) {
-        return 0; // Da implementare
+        return (celsius * 1.8) + 32;
     }
 
     public static double convertiKgInLibbre(double kg) {
-        return 0; // Da implementare
+        if (kg < 0)
+            throw new IllegalArgumentException("I kilogrammi non possono essere negativi");
+
+        return kg * 2.20462262 ;
     }
 
     public static double convertiLitriInGalloni(double litri) {
-        return 0; // Da implementare
+        if (litri < 0)
+            throw new IllegalArgumentException("I litri non possono essere negativi");
+
+        return litri * 0.2641720524;
     }
 
     public static double convertiEuroInDollari(double euro) {
-        return 0; // Da implementare
+        return euro * 1.0834;
     }
 }
