@@ -3,13 +3,13 @@ import java.util.Scanner;
 public class UnitConverter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-     
-        // TODO: Uno studente implementa la logica di interazione con l'utente
-     
+          
         int scelta = 2;
         int valore = 0;
         double risultato = 0;   
-        
+
+        System.out.println("Inserisci il valore da convertire: ");
+        valore = scanner.nextInt();
 
          System.out.println("Inserisci la funzione desiderata: \n" +
                 "1. Converti Km in Migliaia\n" +
