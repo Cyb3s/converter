@@ -11,7 +11,19 @@ public class UnitConverter {
         double risultato = 0;   
         
 
-        // TODO: Implementare le funzioni di conversione nei vari branch
+         System.out.println("Inserisci la funzione desiderata: \n" +
+                "1. Converti Km in Migliaia\n" +
+                "2. Converti Celsius in Farenheit\n" +
+                "3. Converti Kg in Libbre\n" +
+                "4. Converti Litri in Galloni\n" +
+                "5. Converti Euro in Dollari");
+        try {
+            scelta=scanner.nextInt();
+        } catch (Exception e) {
+            System.err.println("Errore nell'inserimento del valore");
+            throw new RuntimeException(e);
+
+        }
         switch (scelta) {
             case 1:
                 risultato = convertiKmInMiglia(valore);
