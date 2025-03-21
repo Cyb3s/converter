@@ -3,14 +3,16 @@ import java.util.Scanner;
 public class UnitConverter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-          
+        //variabili di sistema
         int scelta = 2;
         int valore = 0;
         double risultato = 0;
 
+
+        //inserimento valore
         System.out.println("Inserisci il valore da convertire: ");
         valore = scanner.nextInt();
-
+        //inserimento funzione
          System.out.println("Inserisci la funzione desiderata: \n" +
                 "1. Converti Km in Migliaia\n" +
                 "2. Converti Celsius in Farenheit\n" +
@@ -24,6 +26,7 @@ public class UnitConverter {
             throw new RuntimeException(e);
 
         }
+        //chiamate alle funzioni
         switch (scelta) {
             case 1:
                 risultato = convertiKmInMiglia(valore);
@@ -52,6 +55,8 @@ public class UnitConverter {
 
     // TODO: Ogni studente implementa una di queste funzioni nei propri branch
     // TODO: Ogni studente implementa una di queste funzioni nei propri branch
+
+    //funzioni di conversione
     public static double convertiKmInMiglia(double km) {
         if (km < 0)
             throw new IllegalArgumentException("I kilometri non possono essere negativi");
