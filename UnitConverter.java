@@ -53,8 +53,6 @@ public class UnitConverter {
         scanner.close();
     }
 
-    // TODO: Ogni studente implementa una di queste funzioni nei propri branch
-    // TODO: Ogni studente implementa una di queste funzioni nei propri branch
 
     //funzioni di conversione
     public static double convertiKmInMiglia(double km) {
