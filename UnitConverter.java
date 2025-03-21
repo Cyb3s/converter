@@ -6,7 +6,7 @@ public class UnitConverter {
           
         int scelta = 2;
         int valore = 0;
-        double risultato = 0;   
+        double risultato = 0;
 
         System.out.println("Inserisci il valore da convertire: ");
         valore = scanner.nextInt();
