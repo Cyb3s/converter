@@ -8,8 +8,7 @@ public class UnitConverter {
      
         int scelta = 2;
         int valore = 0;
-        double risultato = 0;   
-        
+        double risultato = 0;
 
          System.out.println("Inserisci la funzione desiderata: \n" +
                 "1. Converti Km in Migliaia\n" +
